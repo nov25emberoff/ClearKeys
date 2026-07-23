@@ -1,0 +1,27 @@
+name: Build FCC Keyboard
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        run: gradle wrapper --gradle-version 8.5
+
+      - name: Build APK
+        run: ./gradlew assembleDebug
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: FCC-Keyboard
+          path: app/build/outputs/apk/debug/*.apk
