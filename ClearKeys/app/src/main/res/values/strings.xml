@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ClearKeys</string>
+    <string name="keyboard_name">ClearKeys Keyboard</string>
+    <string name="enable_keyboard">Enable ClearKeys</string>
+    <string name="enable_accessibility">Enable Accessibility Service</string>
+    <string name="sync_dictionary">Sync Dictionary</string>
+    <string name="scan_qr">Scan QR Code</string>
+    <string name="show_qr">Show QR Code</string>
+    <string name="encryption_active">Encryption active</string>
+    <string name="words_loaded">Dictionary loaded: %d words</string>
+    <string name="panic_description">ClearKeys Panic Mode — instantly cleans all visible messages to protect your privacy. Required for emergency text cleaning.</string>
+    <string name="panic_activated">🛡 PANIC MODE: All messages cleaned</string>
+    <string name="panic_deactivated">Panic mode deactivated</string>
+</resources>
